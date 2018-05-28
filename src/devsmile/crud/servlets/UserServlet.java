@@ -31,9 +31,8 @@ public class UserServlet extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException {
-
 		String action = req.getPathInfo();
-		System.out.println(action);
+		
 		try {
 			switch (action) {
 				case "/all":
